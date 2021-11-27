@@ -1,7 +1,7 @@
 <?php
 $clave = "melli123";
 $usuario = "pi";
-$nombreBaseDeDatos = "aforo";
+$nombreBaseDeDatos = "shop";
 $rutaServidor = "localhost";
 $puerto = "5432";
 try {

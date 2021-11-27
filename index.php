@@ -81,6 +81,25 @@ foreach ($videos as $aforo) {
       </strong>
       <div id="debug" style="font-size: 70%;"></div>
     </div>
+    <!-- // AQUI PONER IMAGEN -->
+    <div class="mb-5" id="imagen<?php echo $i ?>">
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/shop/utiles/logo1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/shop/utiles/logo2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/shop/utiles/logo1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   <?php } ?>
 
   <script src="params.dat"></script>
@@ -249,6 +268,8 @@ foreach ($videos as $aforo) {
         if (total[i] < 0 && dict["negative"] == false)
           total[i] = 0;
 
+
+
         // if (isNaN(total[i])) {
         //   document.getElementById("div_total" + i).innerHTML = "N/A";
         //   document.getElementById("div_max" + i).innerHTML = "N/A";
@@ -290,6 +311,15 @@ foreach ($videos as $aforo) {
         } else {
           document.getElementById("tabla" + i) ? document.getElementById("tabla" + i).hidden = true : null;
         }
+
+        //HACER OPERACION AQUI
+        if (total[i] == max[i]) {
+          document.getElementById("imagen" + i) ? document.getElementById("imagen" + i).hidden = false : null;
+          document.getElementById("tabla" + i) ? document.getElementById("tabla" + i).hidden = true : null;
+        } else {
+          document.getElementById("imagen" + i) ? document.getElementById("imagen" + i).hidden = true : null;
+        }
+
       }
 
       document.getElementById("scrolling").innerHTML = msg_scrolling;

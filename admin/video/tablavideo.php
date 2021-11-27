@@ -17,7 +17,7 @@ if ($_REQUEST)
 	}
 	?>
 	<br>
-	<?php?>
+
 	<?php
 	include_once "../../utiles/base_de_datos.php";
 	$sentencia = $base_de_datos->query("select * from video");
