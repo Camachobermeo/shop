@@ -84,19 +84,9 @@ foreach ($videos as $aforo) {
     <!-- // AQUI PONER IMAGEN -->
     <div class="mb-5" id="imagen<?php echo $i ?>">
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/shop/utiles/logo1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/shop/utiles/logo2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/shop/utiles/logo1.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-      </div>
+      <video autoplay muted loop style="width:100%">
+        <source src="utiles/videos/protocolobio.mp4" type="video/mp4" >
+      </video>
 
     </div>
 
